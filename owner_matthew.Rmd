@@ -1,0 +1,33 @@
+---
+title: "Lab 1"
+subtitle: "Due: Thursday 09/05/2019 by 10 pm"
+author: "Lynna Chu"
+date: "Assigned: 09/03/2019"
+output: 
+  html_document:
+      number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This lab is more or less to help you get familiar with some of the tools we will be using in this class. Form a team of 2 to complete this lab. 
+
+You can use this RMarkDown file as a template for your work. You will need to submit your RMarkdown file and it will need to be full reproducible, i.e. the grader and I will 'knit' your submission. Make sure that you don't use any file structure that depends on your computing environment. 
+
+Instructions for submission of Lab 1 can be found at the end this document. 
+
+# Collaborating on a Repository
+
+Now you will collaborate on and make change to a partner's repo. Form a pair with your neighbor. One of you is the Owner of a repo, and the other is the Partner who collaborates on the same repo.
+
+**Step 1**: Locate the local repo you will be collaborating on and share with your partner. 
+
+1. Owner: Create an `owner_YourName.Rmd` file. Add the following information into the file: 
+    - Matthew Peterson 
+    - I am an MIS major
+    - I injoy SCUBA DIVING
+ 
+     Knit this file when finished. Make sure both files are in your repo. 
+  
