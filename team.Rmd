@@ -29,9 +29,9 @@ unique(recent_rating$Company.Location) # NOTICE: how many countries are listed b
 recent_rating$Company.Location = droplevels(recent_rating$Company.Location)
 # removes the empty levels created by the unique methiod call
 head(recent_rating)
-#shows all of the colunm headers as well as the first 6 rows of data 
+#shows all of the colunm headers as well as the first 6 rows of the recent_rating data 
 cross_table = table(recent_rating$Review.Date,recent_rating$Company.Location)
-#creats a table showing all the yearrs there was a rating and the country that the company that was rated was from
+#creats a table showing all the years there was a rating and the country that the company that was rated was from
 cross_table
 # desplays the tables
 which(cross_table[1,]!=0 & cross_table[2,]!=0 & cross_table[3,]!=0 & cross_table[4,]!=0 & cross_table[5,]!=0)
@@ -63,8 +63,10 @@ plot(germany_recent$Cocoa.Pct ~germany_recent$Review.Date,ylim=c(50,90),col=colo
 legend('bottomright',legend=c('High Rating', 'Low Rating'),col=c('orange','yellow'),pch=18)
 #defines the plot legend
 ```
+
 ## question 2
+2 \. Click Zoom on the Rstudio window (under Plots) to see the plot more clearly. How do you think the plot produced from the code above can be improved? Recommend at least one possible improvement. 
+instead of having the review be eather high or low use a gradeant color scale to show there values or use a 3rd color thats  an ok review. or use  a histagram with the years on the x axes the coco on y-axes and each bucket is a review for that year (grouped by years) and above each bar is the rating 
 
-```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
